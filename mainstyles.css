@@ -4,7 +4,7 @@
 }
 
 /*
-  Styles for the navigation bar
+Styles for the navigation bar
 */
 
 body {
@@ -13,7 +13,7 @@ body {
 
 header {
   width: 100%;
-    height: 90px;
+  height: 90px;
   background-color: #fde56e;
 }
 
@@ -46,21 +46,32 @@ h1 {
   flex: 1;
 }
 
-
 .navLinks {
   font-family: headingFont;
   font-size: 60px;
 }
 
 /*
-  MainPage websites
+  Styles for the banner and logo
 */
 
 .banner {
   background-image: url('banner.jpg');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 0;
-  padding-top: 66.64%
+  height: 80vh;
+  position: relative;
+}
+
+.logo {
+  background-image: url('logo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 70%;
+  transform: translate(-50%, -50%);
 }
