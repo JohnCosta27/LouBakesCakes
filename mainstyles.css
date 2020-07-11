@@ -211,13 +211,13 @@ Styles for the products (cupcakes, muffins, etc...)
 }
 
 .cardDisplay {
-  background-color: #FFFFFF;
+  background-color: #fcb57f;
   width: 400px;
   height: 560px;
   display: flex;
   flex-direction: column;
 
-  border: 2px solid #000000;
+  /*border: 2px solid #000000;*/
   border-radius: 30px;
 
 }
@@ -237,6 +237,7 @@ Styles for the products (cupcakes, muffins, etc...)
 
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 30px;
 }
 
 .cardTitle {
