@@ -165,8 +165,8 @@ Styles for the products (cupcakes, muffins, etc...)
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 50%;
-  height: 25vh;
+  width: 100%;
+  height: 15vh;
   transform: translate(-50%, -50%);
 }
 
@@ -211,11 +211,15 @@ Styles for the products (cupcakes, muffins, etc...)
 }
 
 .cardDisplay {
-  background-color: #88E2FF;
+  background-color: #FFFFFF;
   width: 400px;
   height: 560px;
   display: flex;
   flex-direction: column;
+
+  border: 2px solid #000000;
+  border-radius: 30px;
+
 }
 
 .cardPictureWrapper {
@@ -246,6 +250,7 @@ Styles for the products (cupcakes, muffins, etc...)
   margin: 0;
   padding: 0;
   text-align: center;
+  color: #000000;
 }
 
 /*
@@ -342,11 +347,53 @@ Various mobile views
     float: none;
   }
 
+  .cardDisplay {
+    width: 240px;
+    height: 400px;
+  }
+  .cardPicture {
+    width: 220px;
+    height: 220px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 400px;
+    row-gap: 20px;
+
+    column-gap: 1rem;
+  }
+
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 400px) {
   .logo {
     height: 30vh;
     width: 70%;
+  }
+  .cardDisplay {
+    width: 160px;
+    height: 280px;
+  }
+  .cardPicture {
+    width: 140px;
+    height: 140px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-auto-rows: 300px;
+    row-gap: 10px;
+
+    column-gap: 0.2rem;
+  }
+  .cardTitleText {
+    font-size: 36px;
   }
 }
