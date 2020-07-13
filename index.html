@@ -4,30 +4,61 @@
 <head>
   <title>Lou Bakes Cakes</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body onload="loadImages()">
+<body>
 
-  <div class="mainContainer">
-    <div class="headingContainer">
-      <h1>{lou.bakescakes}</h1>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <div id="dropdownwrapperbakes" style='height: 100%'>
+            <div class='navLinksContainer'>
+              <a class='navLinks'>Bakes</a>
+            </div>
+            <div id='dropdownbakes'>
+              <a href='bakes/cupcakes.html'><div class='dropdownelements'>Cupcakes</div></a>
+              <a href='bakes/muffins.html'><div class='dropdownelements'>Muffins</div></a>
+              <a href='bakes/cookies.html'><div class='dropdownelements'>Cookies</div></a>
+            </div>
+          </div>
+        </li>
+        <li class='loubakescakes'><h1>{lou.bakescakes}</h1></li>
+        <li >
+          <div class='navLinksContainer'>
+            <a class='navLinks'>Contacts</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class='banner'>
+    <div class='logo'></div>
+  </div>
+
+  <div class='introPicture'>
+    <img class='imageClass' src='images/portrait.png'>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+    culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+
+  <div class='mobileflex'>
+    <div class='flexchild'><h1>{lou.bakescakes}</h1></div>
+    <div class='flexchildimage'><img class='imageClass' src='images/portrait.png'></div>
+    <div class='flexchildtext'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+      culpa qui officia deserunt mollit anim id est laborum.
     </div>
-
-    <div class="introContainer">
-      <div class="flexTextHolder">
-        <p class="introText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-      <div class="flexPhotoHolder">
-        <img class="imageClass" src="images/portrait.png">
-      </div>
-    </div>
-
-    <div id="grid" class="cssgrid">
-    </div>
-
   </div>
 
 </body>
