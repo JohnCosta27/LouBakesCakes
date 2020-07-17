@@ -148,110 +148,93 @@ Styles for intro part of the main page
 }
 
 /*
-Styles for the products (cupcakes, muffins, etc...)
+New CSS for new cupcakes page
 */
 
-.productbanner {
-  background-image: url('banner.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 40vh;
-  position: relative;
-  margin-top: 90px;
-}
-
-.productTitle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 15vh;
-  transform: translate(-50%, -50%);
-}
-
-.titles {
-  font-size: 80px;
-  font-family: headingFont;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.grid {
-  display: grid;
-  width: 90%;
-  align-items: center;
-  gap: 1rem;
-
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-auto-rows: 600px;
-  row-gap: 20px;
-
-  column-gap: 2rem;
-
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.card {
+.productBody {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  color: #fff;
-  height: 100%;
-  width: 100%;
-  transition: all 200ms;
-  overflow: hidden;
-  grid-row: span 1 / auto;
 }
 
-.cardDisplay {
-  background-color: #fcb57f;
-  width: 400px;
-  height: 560px;
-  display: flex;
-  flex-direction: column;
-
-  /*border: 2px solid #000000;*/
-  border-radius: 30px;
-
-}
-
-.cardPictureWrapper {
-  flex: 2;
-}
-
-.cardPicture {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-
-  width: 360px;
-  height: 360px;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 30px;
-}
-
-.cardTitle {
-  flex: 1;
-  width: 100%;
-}
-
-.cardTitleText {
+.productText {
   font-size: 48px;
   font-family: headingFont;
-  margin: 0;
-  padding: 0;
   text-align: center;
-  color: #000000;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.productList {
+  font-size: 48px;
+  font-family: headingFont;
+  text-align: center;
+  display: block;
+}
+
+/*
+CSS for the pictures
+*/
+
+.pictureMainWrapper {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pictureUpperRow {
+  flex: 3;
+  display: flex;
+}
+
+.pictureLowerRow {
+  flex: 2;
+  display: flex;
+}
+
+.pictureUpperCard {
+  width: 100%;
+  padding: 25px 25px 25px 25px;
+}
+
+#firstPicture {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/cakes/testFullHD.jpg');
+}
+
+#secondPicture {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 56.25%;
+  background-image: url('images/cakes/testFullHD.jpg');
+  text-align: center;
+  position: relative;
+  top: 30%;
+}
+
+#thirdPicture {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/cakes/testFullHD.jpg');
+}
+
+#forthPicture {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  margin-left: 25%;
+  background-image: url('images/cakes/testFullHD.jpg');
+  margin-top: 10px;
 }
 
 /*
