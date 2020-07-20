@@ -5,6 +5,7 @@
   <title>Lou Bakes Cakes</title>
   <link rel="stylesheet" href="../styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='script.js'></script>
 </head>
 
 <body>
@@ -12,60 +13,63 @@
   <header>
     <nav>
       <ul>
-        <li>
-          <div id="dropdownwrapperbakes" style='height: 100%'>
+        <li class='sideMenuButton' onclick='openNav()'>
+          <p id='sideMenuButton' style='text-align: left'>☰</h1>
+          </li>
+          <li>
+            <div id="dropdownwrapperbakes" style='height: 100%'>
+              <div class='navLinksContainer'>
+                <a class='navLinks'>Bakes</a>
+              </div>
+              <div id='dropdownbakes'>
+                <a href='bakes/cupcakes.html'><div class='dropdownelements'>Cupcakes</div></a>
+                <a href='bakes/muffins.html'><div class='dropdownelements'>Muffins</div></a>
+                <a href='bakes/cookies.html'><div class='dropdownelements'>Cookies</div></a>
+              </div>
+            </div>
+          </li>
+          <li class='loubakescakes'><h1>{lou.bakescakes}</h1></li>
+          <li >
             <div class='navLinksContainer'>
-              <a class='navLinks'>Bakes</a>
+              <a class='navLinks'>Contacts</a>
             </div>
-            <div id='dropdownbakes'>
-              <a href='cupcakes.html'><div class='dropdownelements'>Cupcakes</div></a>
-              <div class='dropdownelements'>Muffins</div>
-              <a href='cookies.html'><div class='dropdownelements'>Cookies</div></a>
-            </div>
-          </div>
-        </li>
-        <a href='../index.html'><li class='loubakescakes'><h1>{lou.bakescakes}</h1></li></a>
-        <li >
-          <div class='navLinksContainer'>
-            <a class='navLinks'>Contacts</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-  </header>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <div class='productbanner'>
-    <div class='productTitle'>
-      <p class='titles'>Muffins</p>
+    <div class='productbanner'>
+      <div class='productTitle'>
+        <p class='titles'>Muffins</p>
+      </div>
     </div>
-  </div>
 
-  <div class='grid'>
-    <div class='card'>
-      <div class='cardDisplay'>
-        <div class='cardPictureWrapper'><img class='cardPicture' src="../images/cakes/image16.jpg"></img></div>
-        <div class='cardTitle'><p class='cardTitleText'>Regular (12)<br>£20</p></div>
+    <div class='grid'>
+      <div class='card'>
+        <div class='cardDisplay'>
+          <div class='cardPictureWrapper'><img class='cardPicture' src="../images/cakes/image16.jpg"></img></div>
+          <div class='cardTitle'><p class='cardTitleText'>Regular (12)<br>£20</p></div>
+        </div>
+      </div>
+      <div class='card'>
+        <div class='cardDisplay'>
+          <div class='cardPictureWrapper'><img class='cardPicture' src="../images/cakes/image16.jpg"></img></div>
+          <div class='cardTitle'><p class='cardTitleText'>Regular (12)<br>£20</p></div>
+        </div>
+      </div>
+      <div class='card'>
+        <div class='cardDisplay'>
+          <div class='cardPictureWrapper'><img class='cardPicture' src="../images/cakes/image16.jpg"></img></div>
+          <div class='cardTitle'><p class='cardTitleText'>Regular (12)<br>£20</p></div>
+        </div>
+      </div>
+      <div class='card'>
+        <div class='cardDisplay'>
+          <div class='cardPictureWrapper'><img class='cardPicture' src="../images/cakes/image16.jpg"></img></div>
+          <div class='cardTitle'><p class='cardTitleText'>Regular (12)<br>£20</p></div>
+        </div>
       </div>
     </div>
-    <div class='card'>
-      <div class='cardDisplay'>
-        <div class='cardPictureWrapper'><img class='cardPicture' src="../images/cakes/image16.jpg"></img></div>
-        <div class='cardTitle'><p class='cardTitleText'>Regular (12)<br>£20</p></div>
-      </div>
-    </div>
-    <div class='card'>
-      <div class='cardDisplay'>
-        <div class='cardPictureWrapper'><img class='cardPicture' src="../images/cakes/image16.jpg"></img></div>
-        <div class='cardTitle'><p class='cardTitleText'>Regular (12)<br>£20</p></div>
-      </div>
-    </div>
-    <div class='card'>
-      <div class='cardDisplay'>
-        <div class='cardPictureWrapper'><img class='cardPicture' src="../images/cakes/image16.jpg"></img></div>
-        <div class='cardTitle'><p class='cardTitleText'>Regular (12)<br>£20</p></div>
-      </div>
-    </div>
-  </div>
 
-</body>
-</html>
+  </body>
+  </html>

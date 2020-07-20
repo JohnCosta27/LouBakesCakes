@@ -4,7 +4,8 @@
 <head>
   <title>Lou Bakes Cakes</title>
   <link rel="stylesheet" href="../styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">#
+  <script src='script.js'></script>
 </head>
 
 <body>
@@ -12,19 +13,22 @@
   <header>
     <nav>
       <ul>
-        <li>
-          <div id="dropdownwrapperbakes" style='height: 100%'>
-            <div class='navLinksContainer'>
-              <a class='navLinks'>Bakes</a>
-            </div>
-            <div id='dropdownbakes'>
-              <div class='dropdownelements'>Cupcakes</div>
-              <a href='cupcakes.html'><div class='dropdownelements'>Muffins</div>
-                <a href='cookies.html'><div class='dropdownelements'>Cookies</div></a>
+        <li class='sideMenuButton' onclick='openNav()'>
+          <p id='sideMenuButton' style='text-align: left'>☰</h1>
+          </li>
+          <li>
+            <div id="dropdownwrapperbakes" style='height: 100%'>
+              <div class='navLinksContainer'>
+                <a class='navLinks'>Bakes</a>
+              </div>
+              <div id='dropdownbakes'>
+                <a href='bakes/cupcakes.html'><div class='dropdownelements'>Cupcakes</div></a>
+                <a href='bakes/muffins.html'><div class='dropdownelements'>Muffins</div></a>
+                <a href='bakes/cookies.html'><div class='dropdownelements'>Cookies</div></a>
               </div>
             </div>
           </li>
-          <a href='../index.html'><li class='loubakescakes'><h1>{lou.bakescakes}</h1></li></a>
+          <li class='loubakescakes'><h1>{lou.bakescakes}</h1></li>
           <li >
             <div class='navLinksContainer'>
               <a class='navLinks'>Contacts</a>

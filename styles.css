@@ -34,6 +34,7 @@ header {
 nav {
   width: 100%;
   height: 100%;
+  display: inline-block;
 }
 
 li {
@@ -66,6 +67,16 @@ h1 {
 a {
   text-decoration: none;
   color: black;
+}
+
+#mobileNavBar {
+  display: none;
+  width: 0%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  transition: width 0.5s ease-in-out;
+  background-color: red;
 }
 
 .navLinksContainer {
@@ -270,6 +281,16 @@ CSS for the pictures
   display: none;
 }
 
+.sideMenuButton {
+  display: none;
+  z-index: 1;
+}
+
+#sideMenuButton {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
 /*
 Various mobile views
 */
@@ -319,6 +340,10 @@ Various mobile views
     font-size: 60px;
   }
 
+  #sideMenuButton {
+    font-size: 55px;
+  }
+
   header {
     height: 75px;
   }
@@ -333,22 +358,22 @@ Various mobile views
 
 }
 
+/*
+This is where the buttons at the top disappear.
+*/
+
 @media screen and (max-width: 700px) {
+
+  #mobileNavBar {
+    display: block;
+  }
 
   .introPicture {
     display: none;
   }
 
-  .loubakescakes {
-    display: none;
-  }
-
   .navLinks {
-    font-size: 60px;
-  }
-
-  h1 {
-    font-size: 60px;
+    display: none;
   }
 
   .banner {
@@ -374,6 +399,7 @@ Various mobile views
     float: none;
     display:block;
     margin:auto;
+    margin-top: 15px;
   }
 
   .flexchildtext {
@@ -382,34 +408,47 @@ Various mobile views
     text-align: center;
   }
 
+  #dropdownwrapperbakes:hover #dropdownbakes{
+    display: none;
+  }
+
+  .sideMenuButton {
+    display: block;
+    margin-left: 5px;
+  }
+
+  .loubakescakes {
+    position: absolute;
+    width: 100%;
+  }
+
 }
 
 @media screen and (max-width: 400px) {
+
   .logo {
     height: 30vh;
     width: 70%;
   }
-  .cardDisplay {
-    width: 160px;
-    height: 280px;
-  }
-  .cardPicture {
-    width: 140px;
-    height: 140px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    grid-auto-rows: 300px;
-    row-gap: 10px;
 
-    column-gap: 0.2rem;
+  h1 {
+    font-size: 48px;
   }
-  .cardTitleText {
-    font-size: 36px;
+
+  #sideMenuButton {
+    font-size: 44px;
+  }
+
+  header {
+    height: 60px;
+  }
+
+  .banner {
+    margin-top: 60px;
+  }
+
+  .productbanner {
+    margin-top: 60px;
   }
 
 }
