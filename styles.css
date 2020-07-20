@@ -10,6 +10,16 @@ Styles for the navigation bar
 body {
   margin: 0;
   background-color: #ffe5b4;
+  overflow-x: hidden;
+  position: absolute;
+  /*
+
+  Code for moving the page.
+
+  transform: translateX(300px);
+  transition: transform 2s ease-in-out;
+  
+  */
 }
 
 header {
@@ -151,6 +161,33 @@ Styles for intro part of the main page
 New CSS for new cupcakes page
 */
 
+.productbanner {
+  background-image: url('banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  margin-top: 90px;
+}
+
+.productTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 15vh;
+  transform: translate(-50%, -50%);
+}
+
+.titles {
+  font-size: 80px;
+  font-family: headingFont;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
 .productBody {
   width: 80%;
   margin-left: 10%;
@@ -200,7 +237,7 @@ CSS for the pictures
   padding: 25px 25px 25px 25px;
 }
 
-#firstPicture {
+.portraitPictures {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -208,7 +245,7 @@ CSS for the pictures
   background-image: url('images/cakes/testFullHD.jpg');
 }
 
-#secondPicture {
+.secondPicture {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -219,15 +256,7 @@ CSS for the pictures
   top: 30%;
 }
 
-#thirdPicture {
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  background-image: url('images/cakes/testFullHD.jpg');
-}
-
-#forthPicture {
+.forthPicture {
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
@@ -237,55 +266,70 @@ CSS for the pictures
   margin-top: 10px;
 }
 
+#thirdRow {
+  display: none;
+}
+
 /*
 Various mobile views
 */
 
 @media screen and (max-width: 1100px) {
 
-  .banner {
-    height: 60vh;
-  }
-
-  .introPicture {
-    font-size: 40px;
-    height: 600px;
-  }
-
   .imageClass {
     width: 55%;
   }
 
-  header {
-    height: 120px;
-    font-size: 100px;
+  /*
+  First view change for the pictures.
+  */
+
+  .pictureMainWrapper {
+    height: 120vh;
   }
 
-  h1 {
-    font-size: 100px;
+  #firstPicture {
+    display: none;
   }
 
-  .logo {
-    height: 30vw;
-    width: 40%;
+  #thirdRow {
+    display: block;
+    flex: 2;
+    margin-top: 10px;
   }
 
-}
-
-@media screen and (max-width: 900px) {
-
-  header {
-    height: 100px;
-    font-size: 80px;
+  .pictureUpperCard {
+    padding: 5px 5px 5px 5px;
   }
 
-  h1 {
-    font-size: 80px;
+  .forthPicture {
+    width: 90%;
+    margin-left: 5%;
   }
 
 }
 
 @media screen and (max-width: 800px) {
+
+  .navLinks {
+    font-size: 60px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  header {
+    height: 75px;
+  }
+
+  .banner {
+    margin-top: 75px;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
 
   .introPicture {
     display: none;
@@ -312,43 +356,26 @@ Various mobile views
     width: 45%;
   }
 
+  .productBody {
+    width: 100%;
+    margin-left: 0;
+  }
+
   .mobileflex {
     display: flex;
     flex-direction: column;
   }
 
-  .flexchildimage {
-    flex: 5;
-    text-align: center;
+  .imageClass {
+    float: none;
+    display:block;
+    margin:auto;
   }
 
   .flexchildtext {
+    font-size: 36px;
     font-family: headingFont;
-    font-size: 48px;
-  }
-
-  .imageClass {
-    float: none;
-  }
-
-  .cardDisplay {
-    width: 240px;
-    height: 400px;
-  }
-  .cardPicture {
-    width: 220px;
-    height: 220px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-auto-rows: 400px;
-    row-gap: 20px;
-
-    column-gap: 1rem;
+    text-align: center;
   }
 
 }
@@ -380,4 +407,5 @@ Various mobile views
   .cardTitleText {
     font-size: 36px;
   }
+
 }
