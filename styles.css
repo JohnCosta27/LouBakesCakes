@@ -18,7 +18,7 @@ body {
 
   transform: translateX(300px);
   transition: transform 2s ease-in-out;
-  
+
   */
 }
 
@@ -324,6 +324,10 @@ Various mobile views
   }
 
   .banner {
+    margin-top: 75px;
+  }
+
+  .productbanner {
     margin-top: 75px;
   }
 
