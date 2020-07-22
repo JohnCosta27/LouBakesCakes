@@ -239,7 +239,7 @@ CSS for the pictures
 }
 
 .pictureLowerRow {
-  flexproductbanner: 2;
+  flex: 2;
   display: flex;
 }
 
