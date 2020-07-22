@@ -73,10 +73,23 @@ a {
   display: none;
   width: 0%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   transition: width 0.5s ease-in-out;
-  background-color: red;
+  background-color: #fde56e;
+  opacity: 0.9;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+#mobileNavBar a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-family: headingFont;
+  font-size: 48px;
+  color: #616161;
+  display: block;
+  transition: 0.3s;
 }
 
 .navLinksContainer {
@@ -262,9 +275,7 @@ CSS for the pictures
   width: 100%;
   height: 56.25%;
   background-image: url('images/cakes/testFullHD.jpg');
-  text-align: center;
-  position: relative;
-  top: 30%;
+  margin-top: 30%;
 }
 
 .forthPicture {
