@@ -12,14 +12,7 @@ body {
   background-color: #ffe5b4;
   overflow-x: hidden;
   position: absolute;
-  /*
-
-  Code for moving the page.
-
-  transform: translateX(300px);
-  transition: transform 2s ease-in-out;
-
-  */
+  width: 100%;
 }
 
 header {
@@ -303,6 +296,49 @@ CSS for the pictures
 }
 
 /*
+Contact me page
+*/
+
+.conctactsTable {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.conctactsTableEntry {
+  width: 100%;
+  height: 120px;
+  display: flex;
+}
+
+.contactsLogoContainer {
+  width: 120px;
+  height: 100%;
+  display: inline-block;
+}
+
+.conctactsLogo {
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.contactsText {
+  text-align: center;
+  font-family: headingFont;
+  width: 480px;
+  height: 100%;
+  display: inline-block;
+}
+
+.tagText {
+  font-size: 96px;
+}
+
+/*
 Various mobile views
 */
 
@@ -367,7 +403,29 @@ Various mobile views
     margin-top: 75px;
   }
 
+  .tagText {
+    font-size: 60px;
+    margin-top: 10px;
+  }
+
+  .conctactsTable {
+    width: 400px;
+  }
+
+  .conctactsTableEntry {
+    height: 100px;
+  }
+
+  .contactsLogoContainer {
+    width: 100px;
+  }
+
+  .contactsText {
+    width: 300px;
+  }
+
 }
+
 
 /*
 This is where the buttons at the top disappear.
@@ -460,6 +518,26 @@ This is where the buttons at the top disappear.
 
   .productbanner {
     margin-top: 60px;
+  }
+
+  .tagText {
+    font-size: 50px;
+  }
+
+  .conctactsTable {
+    width: 300px;
+  }
+
+  .conctactsTableEntry {
+    height: 75px;
+  }
+
+  .contactsLogoContainer {
+    width: 75px;
+  }
+
+  .contactsText {
+    width: 225px;
   }
 
 }
